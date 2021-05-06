@@ -1,0 +1,46 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{#
+/**
+ * Visbook Settings plugin for Craft CMS 3.x
+ *
+ * Visbook Settings index.twig
+ *
+ * @author    Liquid
+ * @copyright Copyright (c) 2021 Liquid
+ * @link      https://liquid.cat
+ * @package   VisbookSettings
+ * @since     1.0.0
+ */
+#}
+
+{% extends "_layouts/cp" %}
+{% import "_includes/forms" as forms %}
+
+{% do view.registerAssetBundle("liquidstudiovisbook\\visbooksettings\\assetbundles\\visbooksettings\\VisbookSettingsAsset") %}
+{% do view.registerAssetBundle("liquidstudiovisbook\\visbooksettings\\assetbundles\\indexcpsection\\IndexCPSectionAsset") %}
+
+{# Link for the ? icon at the bottom of the page #}
+{% set docsUrl = "https://github.com/craft-craft-visbook/visbook-settings/blob/master/README.md" %}
+
+{# The title of this CP section #}
+{% set title = "Visbook Settings" %}
+
+{# The URL to this plugin's base CP section #}
+{% set pluginCpUrl = url('visbook-settings') %}
+
+{# Get a URL to an image in our AssetBundle #}
+{% set iconUrl = view.getAssetManager().getPublishedUrl('@liquidstudiovisbook/visbooksettings/assetbundles/indexcpsection/dist', true) ~ '/img/Index-icon.svg' %}
+
+{# Content that should appear in the page header#}
+{% set extraPageHeaderHtml %}
+    <div class="buttons">
+        <a href="{{ pluginCpUrl }}" class="btn submit add icon">{{ "Click Me!"|t('visbook-settings') }}</a>
+    </div>
+{% endset %}
+
+{# The content of the CP Section#}
+{% set content %}
+    <h2>{{ "Index CP Section body goes here"|t('visbook-settings') }}</h2>
+    <img src="{{ iconUrl }}" height="64" width="64" />
+    <p class="textline"></p>
+{% endset %}

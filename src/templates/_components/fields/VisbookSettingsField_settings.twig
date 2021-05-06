@@ -1,0 +1,26 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{#
+/**
+ * Visbook Settings plugin for Craft CMS
+ *
+ * VisbookSettingsField Field Settings
+ *
+ * @author    Liquid
+ * @copyright Copyright (c) 2021 Liquid
+ * @link      https://liquid.cat
+ * @package   VisbookSettings
+ * @since     1.0.0
+ */
+#}
+
+{% import "_includes/forms" as forms %}
+
+{% do view.registerAssetBundle("liquidstudiovisbook\\visbooksettings\\assetbundles\\visbooksettings\\VisbookSettingsAsset") %}
+
+{{ forms.textField({
+    label: 'Some Attribute',
+    instructions: 'Enter some attribute here.',
+    id: 'someAttribute',
+    name: 'someAttribute',
+    value: field['someAttribute']})
+}}

@@ -1,0 +1,50 @@
+{
+    "name": "liquidstudio/visbook-settings",
+    "description": "A craft plugin for Visbook custom settings.",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "visbook settings"
+    ],
+    "support": {
+        "docs": "https://github.com/craft-craft-visbook/visbook-settings/blob/master/README.md",
+        "issues": "https://github.com/craft-craft-visbook/visbook-settings/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Liquid",
+            "homepage": "https://liquid.cat"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0",
+        "alexk/craft-react": "^1.2"
+    },
+    "require-dev": {
+      "craftcms/cms": "^3.2.0",
+      "codeception/codeception": "^3.0",
+      "vlucas/phpdotenv": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+          "liquidstudiovisbook\\visbooksettings\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Visbook Settings",
+        "handle": "visbook-settings",
+        "developer": "Liquid",
+        "developerUrl": "https://liquid.cat",
+        "documentationUrl": "https://github.com/craft-craft-visbook/visbook-settings/blob/master/README.md",
+        "changelogUrl": "https://raw.githubusercontent.com/craft-craft-visbook/visbook-settings/master/CHANGELOG.md",
+        "components": {
+            "visbookSettingsService": "liquidstudiovisbook\\visbooksettings\\services\\VisbookSettingsService"
+        },
+        "class": "liquidstudiovisbook\\visbooksettings\\VisbookSettings"
+    }
+}
