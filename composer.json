@@ -1,5 +1,5 @@
 {
-    "name": "liquidstudio/visbook-settings",
+    "name": "LiquidBarcelona/craft-visbook-plugin",
     "description": "A craft plugin for Visbook custom settings.",
     "type": "craft-plugin",
     "version": "1.0.0",
