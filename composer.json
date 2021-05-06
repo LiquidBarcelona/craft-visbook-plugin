@@ -11,8 +11,8 @@
         "visbook settings"
     ],
     "support": {
-        "docs": "https://github.com/craft-craft-visbook/visbook-settings/blob/master/README.md",
-        "issues": "https://github.com/craft-craft-visbook/visbook-settings/issues"
+        "docs": "https://github.com/LiquidBarcelona/craft-visbook-plugin/blob/master/README.md",
+        "issues": "https://github.com/LiquidBarcelona/craft-visbook-plugin/issues"
     },
     "license": "MIT",
     "authors": [
@@ -40,11 +40,10 @@
         "handle": "visbook-settings",
         "developer": "Liquid",
         "developerUrl": "https://liquid.cat",
-        "documentationUrl": "https://github.com/craft-craft-visbook/visbook-settings/blob/master/README.md",
-        "changelogUrl": "https://raw.githubusercontent.com/craft-craft-visbook/visbook-settings/master/CHANGELOG.md",
+        "documentationUrl": "https://github.com/LiquidBarcelona/craft-visbook-plugin/blob/master/README.md",
         "components": {
-            "visbookSettingsService": "liquidstudiovisbook\\visbooksettings\\services\\VisbookSettingsService"
+            "visbookSettingsService": "liquidstudio\\visbooksettings\\services\\VisbookSettingsService"
         },
-        "class": "liquidstudiovisbook\\visbooksettings\\VisbookSettings"
+        "class": "liquidstudio\\visbooksettings\\VisbookSettings"
     }
 }
