@@ -5,13 +5,13 @@
  * A craft plugin for Visbook custom settings.
  *
  * @link      https://liquid.cat
- * @copyright Copyright (c) 2021 Liquid
+ * @copyright Copyright (c) 2021 liquid studio
  */
 
-namespace liquidstudio\visbooksettings\widgets;
+namespace liquidstudiovisbooksettings\visbooksettings\widgets;
 
-use liquidstudio\visbooksettings\VisbookSettings;
-use liquidstudio\visbooksettings\assetbundles\visbooksettingswidgetwidget\VisbookSettingsWidgetWidgetAsset;
+use liquidstudiovisbooksettings\visbooksettings\VisbookSettings;
+use liquidstudiovisbooksettings\visbooksettings\assetbundles\visbooksettingswidget\VisbooksettingsWidgetAsset;
 
 use Craft;
 use craft\base\Widget;
@@ -24,11 +24,11 @@ use craft\base\Widget;
  *
  * https://craftcms.com/docs/plugins/widgets
  *
- * @author    Liquid
+ * @author    liquid studio
  * @package   VisbookSettings
  * @since     1.0.0
  */
-class VisbookSettingsWidget extends Widget
+class Visbooksettings extends Widget
 {
 
     // Public Properties
@@ -49,7 +49,7 @@ class VisbookSettingsWidget extends Widget
      */
     public static function displayName(): string
     {
-        return Craft::t('visbook-settings', 'VisbookSettingsWidget');
+        return Craft::t('visbook-settings', 'Visbooksettings');
     }
 
     /**
@@ -59,7 +59,7 @@ class VisbookSettingsWidget extends Widget
      */
     public static function iconPath()
     {
-        return Craft::getAlias("@liquidstudio/visbooksettings/assetbundles/visbooksettingswidgetwidget/dist/img/VisbookSettingsWidget-icon.svg");
+        return Craft::getAlias("@liquidstudiovisbooksettings/visbooksettings/assetbundles/visbooksettingswidget/dist/img/Visbooksettings-icon.svg");
     }
 
     /**
@@ -193,7 +193,7 @@ class VisbookSettingsWidget extends Widget
     public function getSettingsHtml()
     {
         return Craft::$app->getView()->renderTemplate(
-            'visbook-settings/_components/widgets/VisbookSettingsWidget_settings',
+            'visbook-settings/_components/widgets/Visbooksettings_settings',
             [
                 'widget' => $this
             ]
@@ -209,10 +209,10 @@ class VisbookSettingsWidget extends Widget
      */
     public function getBodyHtml()
     {
-        Craft::$app->getView()->registerAssetBundle(VisbookSettingsWidgetWidgetAsset::class);
+        Craft::$app->getView()->registerAssetBundle(VisbooksettingsWidgetAsset::class);
 
         return Craft::$app->getView()->renderTemplate(
-            'visbook-settings/_components/widgets/VisbookSettingsWidget_body',
+            'visbook-settings/_components/widgets/Visbooksettings_body',
             [
                 'message' => $this->message
             ]

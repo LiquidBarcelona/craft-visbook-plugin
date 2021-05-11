@@ -32,7 +32,7 @@ modules:
       migrations: []
       plugins:
         visbook-settings:
-          class: '\liquidstudiovisbook\visbooksettings\VisbookSettings'
+          class: '\liquidstudiovisbooksettings\visbooksettings\VisbookSettings'
           handle: visbook-settings
       cleanup: true
       transaction: true

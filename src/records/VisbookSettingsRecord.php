@@ -8,9 +8,9 @@
  * @copyright Copyright (c) 2021 Liquid
  */
 
-namespace liquidstudiovisbook\visbooksettings\records;
+namespace liquidstudio\visbooksettings\records;
 
-use liquidstudiovisbook\visbooksettings\VisbookSettings;
+use liquidstudio\visbooksettings\VisbookSettings;
 
 use Craft;
 use craft\db\ActiveRecord;

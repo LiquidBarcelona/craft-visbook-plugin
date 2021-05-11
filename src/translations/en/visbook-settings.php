@@ -5,7 +5,7 @@
  * A craft plugin for Visbook custom settings.
  *
  * @link      https://liquid.cat
- * @copyright Copyright (c) 2021 Liquid
+ * @copyright Copyright (c) 2021 liquid studio
  */
 
 /**
@@ -16,7 +16,7 @@
  *
  * http://www.yiiframework.com/doc-2.0/guide-tutorial-i18n.html
  *
- * @author    Liquid
+ * @author    liquid studio
  * @package   VisbookSettings
  * @since     1.0.0
  */

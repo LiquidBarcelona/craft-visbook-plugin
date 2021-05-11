@@ -8,14 +8,14 @@
  * @copyright Copyright (c) 2021 liquid studio
  */
 
-namespace liquidstudiovisbooksettings\visbooksettings\assetbundles\indexcpsection;
+namespace liquidstudiovisbooksettings\visbooksettings\assetbundles\visbooksettingswidget;
 
 use Craft;
 use craft\web\AssetBundle;
 use craft\web\assets\cp\CpAsset;
 
 /**
- * IndexCPSectionAsset AssetBundle
+ * VisbooksettingsWidgetAsset AssetBundle
  *
  * AssetBundle represents a collection of asset files, such as CSS, JS, images.
  *
@@ -32,7 +32,7 @@ use craft\web\assets\cp\CpAsset;
  * @package   VisbookSettings
  * @since     1.0.0
  */
-class IndexCPSectionAsset extends AssetBundle
+class VisbooksettingsWidgetAsset extends AssetBundle
 {
     // Public Methods
     // =========================================================================
@@ -43,7 +43,7 @@ class IndexCPSectionAsset extends AssetBundle
     public function init()
     {
         // define the path that your publishable resources live
-        $this->sourcePath = "@liquidstudiovisbooksettings/visbooksettings/assetbundles/indexcpsection/dist";
+        $this->sourcePath = "@liquidstudiovisbooksettings/visbooksettings/assetbundles/visbooksettingswidget/dist";
 
         // define the dependencies
         $this->depends = [
@@ -53,11 +53,11 @@ class IndexCPSectionAsset extends AssetBundle
         // define the relative path to CSS/JS files that should be registered with the page
         // when this asset bundle is registered
         $this->js = [
-            'js/Index.js',
+            'js/Visbooksettings.js',
         ];
 
         $this->css = [
-            'css/Index.css',
+            'css/Visbooksettings.css',
         ];
 
         parent::init();

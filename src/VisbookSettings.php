@@ -5,22 +5,23 @@
  * A craft plugin for Visbook custom settings.
  *
  * @link      https://liquid.cat
- * @copyright Copyright (c) 2021 Liquid
+ * @copyright Copyright (c) 2021 liquid studio
  */
 
-namespace liquidstudiovisbook\visbooksettings;
+namespace liquidstudiovisbooksettings\visbooksettings;
 
-use liquidstudiovisbook\visbooksettings\services\VisbookSettingsService as VisbookSettingsServiceService;
-use liquidstudiovisbook\visbooksettings\variables\VisbookSettingsVariable;
-use liquidstudiovisbook\visbooksettings\twigextensions\VisbookSettingsTwigExtension;
-use liquidstudiovisbook\visbooksettings\models\Settings;
-use liquidstudiovisbook\visbooksettings\fields\VisbookSettingsField as VisbookSettingsFieldField;
-use liquidstudiovisbook\visbooksettings\widgets\VisbookSettingsWidget as VisbookSettingsWidgetWidget;
+use liquidstudiovisbooksettings\visbooksettings\services\BookingService as BookingServiceService;
+use liquidstudiovisbooksettings\visbooksettings\variables\VisbookSettingsVariable;
+use liquidstudiovisbooksettings\visbooksettings\twigextensions\VisbookSettingsTwigExtension;
+use liquidstudiovisbooksettings\visbooksettings\models\Settings;
+use liquidstudiovisbooksettings\visbooksettings\fields\VisbookSettingsField as VisbookSettingsFieldField;
+use liquidstudiovisbooksettings\visbooksettings\widgets\Visbooksettings as VisbooksettingsWidget;
 
 use Craft;
 use craft\base\Plugin;
 use craft\services\Plugins;
 use craft\events\PluginEvent;
+use craft\console\Application as ConsoleApplication;
 use craft\web\UrlManager;
 use craft\services\Elements;
 use craft\services\Fields;
@@ -41,11 +42,11 @@ use yii\base\Event;
  *
  * https://docs.craftcms.com/v3/extend/
  *
- * @author    Liquid
+ * @author    liquid studio
  * @package   VisbookSettings
  * @since     1.0.0
  *
- * @property  VisbookSettingsServiceService $visbookSettingsService
+ * @property  BookingServiceService $bookingService
  * @property  Settings $settings
  * @method    Settings getSettings()
  */
@@ -108,12 +109,17 @@ class VisbookSettings extends Plugin
         // Add in our Twig extensions
         Craft::$app->view->registerTwigExtension(new VisbookSettingsTwigExtension());
 
+        // Add in our console commands
+        if (Craft::$app instanceof ConsoleApplication) {
+            $this->controllerNamespace = 'liquidstudiovisbooksettings\visbooksettings\console\controllers';
+        }
+
         // Register our site routes
         Event::on(
             UrlManager::class,
             UrlManager::EVENT_REGISTER_SITE_URL_RULES,
             function (RegisterUrlRulesEvent $event) {
-                $event->rules['siteActionTrigger1'] = 'visbook-settings/booking';
+                $event->rules['siteActionTrigger1'] = 'visbook-settings/booking-controller';
             }
         );
 
@@ -122,7 +128,7 @@ class VisbookSettings extends Plugin
             UrlManager::class,
             UrlManager::EVENT_REGISTER_CP_URL_RULES,
             function (RegisterUrlRulesEvent $event) {
-                $event->rules['cpActionTrigger1'] = 'visbook-settings/booking/do-something';
+                $event->rules['cpActionTrigger1'] = 'visbook-settings/booking-controller/do-something';
             }
         );
 
@@ -148,7 +154,7 @@ class VisbookSettings extends Plugin
             Dashboard::class,
             Dashboard::EVENT_REGISTER_WIDGET_TYPES,
             function (RegisterComponentTypesEvent $event) {
-                $event->types[] = VisbookSettingsWidgetWidget::class;
+                $event->types[] = VisbooksettingsWidget::class;
             }
         );
 

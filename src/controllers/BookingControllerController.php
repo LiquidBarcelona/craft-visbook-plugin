@@ -5,18 +5,18 @@
  * A craft plugin for Visbook custom settings.
  *
  * @link      https://liquid.cat
- * @copyright Copyright (c) 2021 Liquid
+ * @copyright Copyright (c) 2021 liquid studio
  */
 
-namespace liquidstudio\visbooksettings\controllers;
+namespace liquidstudiovisbooksettings\visbooksettings\controllers;
 
-use liquidstudio\visbooksettings\VisbookSettings;
+use liquidstudiovisbooksettings\visbooksettings\VisbookSettings;
 
 use Craft;
 use craft\web\Controller;
 
 /**
- * Booking Controller
+ * BookingController Controller
  *
  * Generally speaking, controllers are the middlemen between the front end of
  * the CP/website and your plugin’s services. They contain action methods which
@@ -31,11 +31,11 @@ use craft\web\Controller;
  *
  * https://craftcms.com/docs/plugins/controllers
  *
- * @author    Liquid
+ * @author    liquid studio
  * @package   VisbookSettings
  * @since     1.0.0
  */
-class BookingController extends Controller
+class BookingControllerController extends Controller
 {
 
     // Protected Properties
@@ -53,26 +53,26 @@ class BookingController extends Controller
 
     /**
      * Handle a request going to our plugin's index action URL,
-     * e.g.: actions/visbook-settings/booking
+     * e.g.: actions/visbook-settings/booking-controller
      *
      * @return mixed
      */
     public function actionIndex()
     {
-        $result = 'Welcome to the BookingController actionIndex() method';
+        $result = 'Welcome to the BookingControllerController actionIndex() method';
 
         return $result;
     }
 
     /**
      * Handle a request going to our plugin's actionDoSomething URL,
-     * e.g.: actions/visbook-settings/booking/do-something
+     * e.g.: actions/visbook-settings/booking-controller/do-something
      *
      * @return mixed
      */
     public function actionDoSomething()
     {
-        $result = 'Welcome to the BookingController actionDoSomething() method';
+        $result = 'Welcome to the BookingControllerController actionDoSomething() method';
 
         return $result;
     }

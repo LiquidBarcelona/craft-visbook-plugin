@@ -5,12 +5,12 @@
  * A craft plugin for Visbook custom settings.
  *
  * @link      https://liquid.cat
- * @copyright Copyright (c) 2021 Liquid
+ * @copyright Copyright (c) 2021 liquid studio
  */
 
-namespace liquidstudiovisbook\visbooksettings\twigextensions;
+namespace liquidstudiovisbooksettings\visbooksettings\twigextensions;
 
-use liquidstudiovisbook\visbooksettings\VisbookSettings;
+use liquidstudiovisbooksettings\visbooksettings\VisbookSettings;
 
 use Craft;
 
@@ -25,7 +25,7 @@ use Twig\TwigFunction;
  *
  * http://twig.sensiolabs.org/doc/advanced.html
  *
- * @author    Liquid
+ * @author    liquid studio
  * @package   VisbookSettings
  * @since     1.0.0
  */

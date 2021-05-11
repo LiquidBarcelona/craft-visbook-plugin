@@ -1,9 +1,9 @@
 {# @var craft \craft\web\twig\variables\CraftVariable #}
 {#
 /**
- * Visbook Settings plugin for Craft CMS 3.x
+ * Visbook Settings plugin for Craft CMS
  *
- * Visbook Settings Settings.twig
+ * Visbooksettings Widget Settings
  *
  * @author    liquid studio
  * @copyright Copyright (c) 2021 liquid studio
@@ -18,9 +18,9 @@
 {% do view.registerAssetBundle("liquidstudiovisbooksettings\\visbooksettings\\assetbundles\\visbooksettings\\VisbookSettingsAsset") %}
 
 {{ forms.textField({
-    label: 'Some Field',
-    instructions: 'Enter some setting here.',
-    id: 'someAttribute',
-    name: 'someAttribute',
-    value: settings['someAttribute']})
+    label: 'Message',
+    instructions: 'Enter a message here.',
+    id: 'message',
+    name: 'message',
+    value: widget['message']})
 }}

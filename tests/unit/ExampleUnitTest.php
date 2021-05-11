@@ -5,21 +5,21 @@
  * A craft plugin for Visbook custom settings.
  *
  * @link      https://liquid.cat
- * @copyright Copyright (c) 2021 Liquid
+ * @copyright Copyright (c) 2021 liquid studio
  */
 
-namespace liquidstudiovisbook\visbooksettingstests\unit;
+namespace liquidstudiovisbooksettings\visbooksettingstests\unit;
 
 use Codeception\Test\Unit;
 use UnitTester;
 use Craft;
-use liquidstudiovisbook\visbooksettings\VisbookSettings;
+use liquidstudiovisbooksettings\visbooksettings\VisbookSettings;
 
 /**
  * ExampleUnitTest
  *
  *
- * @author    Liquid
+ * @author    liquid studio
  * @package   VisbookSettings
  * @since     1.0.0
  */

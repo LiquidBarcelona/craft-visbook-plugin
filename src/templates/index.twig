@@ -5,8 +5,8 @@
  *
  * Visbook Settings index.twig
  *
- * @author    Liquid
- * @copyright Copyright (c) 2021 Liquid
+ * @author    liquid studio
+ * @copyright Copyright (c) 2021 liquid studio
  * @link      https://liquid.cat
  * @package   VisbookSettings
  * @since     1.0.0
@@ -16,11 +16,11 @@
 {% extends "_layouts/cp" %}
 {% import "_includes/forms" as forms %}
 
-{% do view.registerAssetBundle("liquidstudiovisbook\\visbooksettings\\assetbundles\\visbooksettings\\VisbookSettingsAsset") %}
-{% do view.registerAssetBundle("liquidstudiovisbook\\visbooksettings\\assetbundles\\indexcpsection\\IndexCPSectionAsset") %}
+{% do view.registerAssetBundle("liquidstudiovisbooksettings\\visbooksettings\\assetbundles\\visbooksettings\\VisbookSettingsAsset") %}
+{% do view.registerAssetBundle("liquidstudiovisbooksettings\\visbooksettings\\assetbundles\\indexcpsection\\IndexCPSectionAsset") %}
 
 {# Link for the ? icon at the bottom of the page #}
-{% set docsUrl = "https://github.com/craft-craft-visbook/visbook-settings/blob/master/README.md" %}
+{% set docsUrl = "https://github.com/craft-visbook-plugin/visbook-settings/blob/master/README.md" %}
 
 {# The title of this CP section #}
 {% set title = "Visbook Settings" %}
@@ -29,7 +29,7 @@
 {% set pluginCpUrl = url('visbook-settings') %}
 
 {# Get a URL to an image in our AssetBundle #}
-{% set iconUrl = view.getAssetManager().getPublishedUrl('@liquidstudiovisbook/visbooksettings/assetbundles/indexcpsection/dist', true) ~ '/img/Index-icon.svg' %}
+{% set iconUrl = view.getAssetManager().getPublishedUrl('@liquidstudiovisbooksettings/visbooksettings/assetbundles/indexcpsection/dist', true) ~ '/img/Index-icon.svg' %}
 
 {# Content that should appear in the page header#}
 {% set extraPageHeaderHtml %}

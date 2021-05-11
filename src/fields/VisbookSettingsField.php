@@ -5,13 +5,13 @@
  * A craft plugin for Visbook custom settings.
  *
  * @link      https://liquid.cat
- * @copyright Copyright (c) 2021 Liquid
+ * @copyright Copyright (c) 2021 liquid studio
  */
 
-namespace liquidstudiovisbook\visbooksettings\fields;
+namespace liquidstudiovisbooksettings\visbooksettings\fields;
 
-use liquidstudiovisbook\visbooksettings\VisbookSettings;
-use liquidstudiovisbook\visbooksettings\assetbundles\visbooksettingsfieldfield\VisbookSettingsFieldFieldAsset;
+use liquidstudiovisbooksettings\visbooksettings\VisbookSettings;
+use liquidstudiovisbooksettings\visbooksettings\assetbundles\visbooksettingsfieldfield\VisbookSettingsFieldFieldAsset;
 
 use Craft;
 use craft\base\ElementInterface;
@@ -29,7 +29,7 @@ use craft\helpers\Json;
  *
  * https://craftcms.com/docs/plugins/field-types
  *
- * @author    Liquid
+ * @author    liquid studio
  * @package   VisbookSettings
  * @since     1.0.0
  */

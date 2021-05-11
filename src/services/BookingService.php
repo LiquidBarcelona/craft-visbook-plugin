@@ -5,18 +5,18 @@
  * A craft plugin for Visbook custom settings.
  *
  * @link      https://liquid.cat
- * @copyright Copyright (c) 2021 Liquid
+ * @copyright Copyright (c) 2021 liquid studio
  */
 
-namespace liquidstudio\visbooksettings\services;
+namespace liquidstudiovisbooksettings\visbooksettings\services;
 
-use liquidstudio\visbooksettings\VisbookSettings;
+use liquidstudiovisbooksettings\visbooksettings\VisbookSettings;
 
 use Craft;
 use craft\base\Component;
 
 /**
- * VisbookSettingsService Service
+ * BookingService Service
  *
  * All of your plugin’s business logic should go in services, including saving data,
  * retrieving data, etc. They provide APIs that your controllers, template variables,
@@ -24,11 +24,11 @@ use craft\base\Component;
  *
  * https://craftcms.com/docs/plugins/services
  *
- * @author    Liquid
+ * @author    liquid studio
  * @package   VisbookSettings
  * @since     1.0.0
  */
-class VisbookSettingsService extends Component
+class BookingService extends Component
 {
     // Public Methods
     // =========================================================================
@@ -39,7 +39,7 @@ class VisbookSettingsService extends Component
      *
      * From any other plugin file, call it like this:
      *
-     *     VisbookSettings::$plugin->visbookSettingsService->exampleService()
+     *     VisbookSettings::$plugin->bookingService->exampleService()
      *
      * @return mixed
      */

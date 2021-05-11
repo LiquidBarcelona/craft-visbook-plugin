@@ -8,7 +8,7 @@
  * @copyright Copyright (c) 2021 Liquid
  */
 
-namespace liquidstudiovisbook\visbooksettings\assetbundles\visbooksettingswidgetwidget;
+namespace liquidstudio\visbooksettings\assetbundles\visbooksettingswidgetwidget;
 
 use Craft;
 use craft\web\AssetBundle;
@@ -43,7 +43,7 @@ class VisbookSettingsWidgetWidgetAsset extends AssetBundle
     public function init()
     {
         // define the path that your publishable resources live
-        $this->sourcePath = "@liquidstudiovisbook/visbooksettings/assetbundles/visbooksettingswidgetwidget/dist";
+        $this->sourcePath = "@liquidstudio/visbooksettings/assetbundles/visbooksettingswidgetwidget/dist";
 
         // define the dependencies
         $this->depends = [

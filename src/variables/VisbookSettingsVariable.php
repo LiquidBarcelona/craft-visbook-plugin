@@ -5,12 +5,12 @@
  * A craft plugin for Visbook custom settings.
  *
  * @link      https://liquid.cat
- * @copyright Copyright (c) 2021 Liquid
+ * @copyright Copyright (c) 2021 liquid studio
  */
 
-namespace liquidstudiovisbook\visbooksettings\variables;
+namespace liquidstudiovisbooksettings\visbooksettings\variables;
 
-use liquidstudiovisbook\visbooksettings\VisbookSettings;
+use liquidstudiovisbooksettings\visbooksettings\VisbookSettings;
 
 use Craft;
 
@@ -22,7 +22,7 @@ use Craft;
  *
  * https://craftcms.com/docs/plugins/variables
  *
- * @author    Liquid
+ * @author    liquid studio
  * @package   VisbookSettings
  * @since     1.0.0
  */

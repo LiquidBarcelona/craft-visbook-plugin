@@ -1,6 +1,6 @@
 <?php
 
-namespace liquidstudiovisbook\visbooksettingstests\acceptance;
+namespace liquidstudiovisbooksettings\visbooksettingstests\acceptance;
 
 use Craft;
 use FunctionalTester;

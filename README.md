@@ -18,7 +18,7 @@ To install the plugin, follow these instructions.
 
 2. Then tell Composer to load the plugin:
 
-        composer require craft-craft-visbook/visbook-settings
+        composer require craft-visbook-plugin/visbook-settings
 
 3. In the Control Panel, go to Settings → Plugins and click the “Install” button for Visbook Settings.
 
@@ -40,4 +40,4 @@ Some things to do, and ideas for potential features:
 
 * Release it
 
-Brought to you by [Liquid](https://liquid.cat)
+Brought to you by [liquid studio](https://liquid.cat)

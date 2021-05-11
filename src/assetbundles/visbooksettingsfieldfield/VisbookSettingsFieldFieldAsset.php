@@ -5,10 +5,10 @@
  * A craft plugin for Visbook custom settings.
  *
  * @link      https://liquid.cat
- * @copyright Copyright (c) 2021 Liquid
+ * @copyright Copyright (c) 2021 liquid studio
  */
 
-namespace liquidstudiovisbook\visbooksettings\assetbundles\visbooksettingsfieldfield;
+namespace liquidstudiovisbooksettings\visbooksettings\assetbundles\visbooksettingsfieldfield;
 
 use Craft;
 use craft\web\AssetBundle;
@@ -28,7 +28,7 @@ use craft\web\assets\cp\CpAsset;
  *
  * http://www.yiiframework.com/doc-2.0/guide-structure-assets.html
  *
- * @author    Liquid
+ * @author    liquid studio
  * @package   VisbookSettings
  * @since     1.0.0
  */
@@ -43,7 +43,7 @@ class VisbookSettingsFieldFieldAsset extends AssetBundle
     public function init()
     {
         // define the path that your publishable resources live
-        $this->sourcePath = "@liquidstudiovisbook/visbooksettings/assetbundles/visbooksettingsfieldfield/dist";
+        $this->sourcePath = "@liquidstudiovisbooksettings/visbooksettings/assetbundles/visbooksettingsfieldfield/dist";
 
         // define the dependencies
         $this->depends = [

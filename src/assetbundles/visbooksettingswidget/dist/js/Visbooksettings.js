@@ -1,7 +1,7 @@
 /**
  * Visbook Settings plugin for Craft CMS
  *
- * Index Field CSS
+ * Visbooksettings Widget JS
  *
  * @author    liquid studio
  * @copyright Copyright (c) 2021 liquid studio

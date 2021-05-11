@@ -1,5 +1,5 @@
 {
-    "name": "liquidstudio/visbook-settings",
+    "name": "liquidstudiovisbooksettings/visbook-settings",
     "description": "A craft plugin for Visbook custom settings.",
     "type": "craft-plugin",
     "version": "1.0.0",
@@ -11,19 +11,18 @@
         "visbook settings"
     ],
     "support": {
-        "docs": "https://github.com/LiquidBarcelona/craft-visbook-plugin/blob/master/README.md",
-        "issues": "https://github.com/LiquidBarcelona/craft-visbook-plugin/issues"
+        "docs": "https://github.com/craft-visbook-plugin/visbook-settings/blob/master/README.md",
+        "issues": "https://github.com/craft-visbook-plugin/visbook-settings/issues"
     },
     "license": "MIT",
     "authors": [
         {
-            "name": "Liquid",
+            "name": "liquid studio",
             "homepage": "https://liquid.cat"
         }
     ],
     "require": {
-        "craftcms/cms": "^3.0.0",
-        "alexk/craft-react": "^1.2"
+        "craftcms/cms": "^3.0.0"
     },
     "require-dev": {
       "craftcms/cms": "^3.2.0",
@@ -32,18 +31,19 @@
     },
     "autoload": {
         "psr-4": {
-          "liquidstudiovisbook\\visbooksettings\\": "src/"
+          "liquidstudiovisbooksettings\\visbooksettings\\": "src/"
         }
     },
     "extra": {
         "name": "Visbook Settings",
         "handle": "visbook-settings",
-        "developer": "Liquid",
+        "developer": "liquid studio",
         "developerUrl": "https://liquid.cat",
-        "documentationUrl": "https://github.com/LiquidBarcelona/craft-visbook-plugin/blob/master/README.md",
+        "documentationUrl": "https://github.com/craft-visbook-plugin/visbook-settings/blob/master/README.md",
+        "changelogUrl": "https://raw.githubusercontent.com/craft-visbook-plugin/visbook-settings/master/CHANGELOG.md",
         "components": {
-            "visbookSettingsService": "liquidstudio\\visbooksettings\\services\\VisbookSettingsService"
+            "bookingService": "liquidstudiovisbooksettings\\visbooksettings\\services\\BookingService"
         },
-        "class": "liquidstudio\\visbooksettings\\VisbookSettings"
+        "class": "liquidstudiovisbooksettings\\visbooksettings\\VisbookSettings"
     }
 }
